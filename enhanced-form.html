@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Enhanced Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header, section, footer {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        input, textarea, select, button {
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Healthy Living: Eating Right & Staying Active</h1>
+    <p>This page teaches you simple ways to live a healthier life through balanced eating and daily activity.</p>
+</header>
+
+<section>
+    <h2>Why a Healthy Lifestyle Matters</h2>
+    <img src="https://picsum.photos/800/300?healthy-lifestyle" alt="Healthy Lifestyle Image">
+    <ul>
+        <li>Boosts your energy levels</li>
+        <li>Strengthens your immune system</li>
+        <li>Improves mental well-being</li>
+        <li>Helps maintain a healthy weight</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Daily Recommended Food Portions</h2>
+    <table>
+        <tr>
+            <th>Food Group</th>
+            <th>Daily Servings</th>
+            <th>Example Foods</th>
+        </tr>
+        <tr>
+            <td>Fruits</td>
+            <td>2-3 servings</td>
+            <td>Bananas, Apples, Oranges</td>
+        </tr>
+        <tr>
+            <td>Vegetables</td>
+            <td>3-5 servings</td>
+            <td>Spinach, Carrots, Broccoli</td>
+        </tr>
+        <tr>
+            <td>Proteins</td>
+            <td>2-3 servings</td>
+            <td>Fish, Chicken, Beans</td>
+        </tr>
+        <tr>
+            <td>Whole Grains</td>
+            <td>3-6 servings</td>
+            <td>Brown Rice, Oats, Whole Wheat Bread</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Watch & Listen: Healthy Living Tips</h2>
+    <video controls width="400">
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>Play the audio guide for a quick summary:</p>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</section>
+
+<section>
+    <h2>Share Your Healthy Habits</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required minlength="2">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required minlength="2">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Healthy Habits</legend>
+            <label for="meals">How many meals do you eat per day?</label>
+            <input type="number" id="meals" name="meals" min="1" max="10" required>
+
+            <label for="exercise">Type of Exercise:</label>
+            <select id="exercise" name="exercise" required>
+                <option value="">--Select--</option>
+                <option value="walking">Walking</option>
+                <option value="running">Running</option>
+                <option value="gym">Gym</option>
+                <option value="yoga">Yoga</option>
+            </select>
+
+            <label for="message">Your Health Tip:</label>
+            <textarea id="message" name="message" placeholder="Share your healthy living advice..." required minlength="10"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Healthy Living Guide</p>
+</footer>
+
+</body>
+</html>
